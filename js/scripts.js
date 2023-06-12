@@ -7,7 +7,7 @@ console.log('User name',userFirstName, typeof userFirstName);
 //  2)
 const userSecondName = prompt('Il tuo cognome: '); 
 
-console.log('User name',userSecondName, typeof userSecondName);
+console.log('User second name',userSecondName, typeof userSecondName);
 
 
 // 3)
@@ -25,8 +25,22 @@ console.log('pwd', pwd, typeof pwd);
 
 
 
-const pwdContainer = document.getElementById('pwd-container')
+
+const pwdContainer = document.querySelector('#pwd-container');
+
+// const pwdContainer = document.getElementById('pwd-container')
 
 console.log('pwdContainer', pwdContainer, typeof pwdContainer)
 
-pwdContainer.innerHTML = pwd
+const previousText = pwdContainer.innerHTML;
+
+console.log('previousText', previousText, typeof previousText);
+
+pwdContainer.innerHTML = previousText + pwd;
+
+
+// vale anche 
+
+// pwdContainer.innerHTML =+ pwd;
+
+// pwdContainer.innerHTML = pwdContainer.innerHTML  + pwd;
