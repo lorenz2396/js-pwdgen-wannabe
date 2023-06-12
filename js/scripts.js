@@ -29,4 +29,4 @@ const pwdContainer = document.getElementById('pwd-container')
 
 console.log('pwdContainer', pwdContainer, typeof pwdContainer)
 
-pwdContainer.innerHTML = 'LA TUA PASSSWORD'
+pwdContainer.innerHTML = pwd
